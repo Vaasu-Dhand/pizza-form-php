@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Patrick+Hand+SC|Waiting+for+the+Sunrise);
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('Background.jpg');
+  background-size: contain;
+  max-height: 100vh;
+}
+
+.container {
+  border-radius: 5%;
+  margin: auto;
+  font-family: 'Patrick Hand SC';
+  font-size: 25px;
+  text-align: center;
+  margin-top: 50px;
+  padding: 40px;
+  width: 40%;
+}
+
+h1 {
+  font-family: 'Cabin Sketch';
+  font-size:80px;
+}
+
+h3 {
+  font-size: 60px;
+  padding-bottom: 10px;
+}
+
+form{
+  background-color:#211e1e;
+  color:white;
+  border-radius: 5px;
+}
+
+label {
+  padding-right: 10px;
+}
+
+input{
+  font-family: 'Waiting for the Sunrise';
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+
+select {
+  font-family: 'Patrick Hand SC';
+  font-size: 20px;
+}
+
+.smaller {
+  font-size: 18px;
+}
+
+.button {
+  font-size: x-large;
+  padding: 0px 10px;
+}
+
+/* form.php */
+.summary {
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.row {
+  border-bottom: 1px solid white;
+}
+
+.form {
+  background-color:#211e1e;
+  color:white;
+  border-radius: 5px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.totals {
+  border-bottom: 2px solid yellow;
+}
+
+.text-yellow {
+  color: yellow;
+}
+.btn {
+  margin-top: 15px;
+  font-size: x-large;
+  padding: 0px 10px;
+  border-radius: 50px;
+  background-color: yellow;
+  
+  font-family: 'Patrick Hand SC';
+  font-weight: 800;
+  
+}

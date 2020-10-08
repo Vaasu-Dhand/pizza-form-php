@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Papa's Pizza | Order Now</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./Favicon.png" />
+    <!-- StyleSheet Import -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <form
+      name="input"
+      class="container animate__animated animate__swing"
+      action="form.php"
+      method="POST"
+    >
+      <h1>Papa's Pizza</h1>
+      <h3>Order</h3>
+      <!-- 1)	Customer Name: -->
+      <label for="name">Customer Name: </label>
+      <input type="text" name="name" placeholder="Alex Cook" />
+      <br />
+      <!-- 2)	Pizza Base: Dropdown list: Options can be hand tossed, thin crust , regular -->
+      <label for="pizza_base">Pizza Base:</label>
+      <select name="pizza_base">
+        <option value="hand_tossed">Hand Tossed</option>
+        <option value="thin_crust">Thin Crust</option>
+        <option value="regular">Regular</option>
+      </select>
+      <br />
+      <!-- 3)	Pizza Type: Dropdown list::Pepperoni, Cheese, Veggie Lovers, Hawaiian -->
+      <label for="pizza_type">Pizza Type:</label>
+      <select name="pizza_type">
+        <option value="pepperoni">Pepperoni</option>
+        <option value="cheese">Cheese</option>
+        <option value="veggie_lovers">Veggie Lovers</option>
+        <option value="hawaiian">Hawaiian</option>
+      </select>
+      <br />
+      <!-- 4)	Pizza Size: Small , medium ,large -->
+      <label for="pizza_size">Pizza Size:</label>
+      <input type="radio" name="pizza_size" value="small" checked />
+      <label for="small" class="smaller">Small</label>
+      <input type="radio" name="pizza_size" value="medium" />
+      <label for="medium" class="smaller">Medium</label>
+      <input type="radio" name="pizza_size" value="large" />
+      <label for="large" class="smaller">Large</label>
+      <br />
+      <!-- 5)	Drink : Dropdown list: Coke, Juice , Canada Dry -->
+      <label for="drink">Drink:</label>
+      <select name="drink">
+        <option value="coke">Coke</option>
+        <option value="cheese">Juice</option>
+        <option value="canada_dry">Canada Dry</option>
+      </select>
+      <br />
+      <!-- 6)	Quantity for Drinks: number of drinks   -->
+      <label for="quantity_of_drinks">Quantity for Drinks: </label>
+      <input
+        type="number"
+        name="quantity_of_drinks"
+        placeholder="1"
+        min="1"
+        max="5"
+        value="1" 
+      /><br />
+      <!-- 7)	Dessert : Dropdown list: Brownie,  Ice cream -->
+      <label for="dessert">Dessert:</label>
+      <select name="dessert">
+        <option value="brownie">Brownie</option>
+        <option value="ice_cream">Ice Cream</option>
+      </select>
+      <br />
+      <!-- 8)	Delivery  option : Drop down list : Yes or NO  -->
+      <label for="delivery">Delivery Option:</label>
+      <select name="delivery">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+      <br /><br />
+      <input type="submit" value="Submit" href="#" class="button" />
+    </form>
+  </body>
+</html>

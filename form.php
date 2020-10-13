@@ -15,6 +15,7 @@
   
   // Total Price Calculation
   $totalPrice;
+  // Pizza Size
   if ($pizzaSize === 'small') { 
     $totalPrice = 10;
   } else if ($pizzaSize === 'medium') {
@@ -22,7 +23,11 @@
   } else if ($pizzaSize === 'large') {
     $totalPrice = 20;
   }
-  $totalPrice += 8; // Drinks and Dessert cost
+  // Amount of Drinks
+  $drinksPrice = 3 * $quantityOfDrinks;
+  $totalPrice += $drinksPrice;
+  // Dessert cost
+  $totalPrice += 5; 
   $afterTax = $totalPrice * 1.13; // After Tax
   $deliveryCharges;
   if ($delivery === 'yes') {
